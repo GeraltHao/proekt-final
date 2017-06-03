@@ -72,7 +72,7 @@
     "radix": true,
     "restrict-plus-operands": false,
     "semicolon": [
-      true,
+      false,
       "always"
     ],
     "switch-default": false,
