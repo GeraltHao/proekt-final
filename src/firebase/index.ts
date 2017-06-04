@@ -16,7 +16,7 @@ const firebaseConfig = {
   imports: [
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(firebaseConfig, 'ng2-todo-app')
+    AngularFireModule.initializeApp(firebaseConfig, 'proekt-final')
   ]
 })
 export class FirebaseModule {}
