@@ -1,16 +1,16 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
 
-import { SignInComponent } from './components/sign-in';
-import { AuthGuard } from './guards/auth-guard';
-import { UnauthGuard } from './guards/unauth-guard';
-import { AuthService } from './services/auth-service';
+import { SignInComponent } from './components/sign-in'
+import { AuthGuard } from './guards/auth-guard'
+import { UnauthGuard } from './guards/unauth-guard'
+import { AuthService } from './services/auth-service'
 
 
 const routes: Routes = [
   {path: '', component: SignInComponent, canActivate: [UnauthGuard]}
-];
+]
 
 
 @NgModule({
@@ -30,6 +30,6 @@ const routes: Routes = [
 export class AuthModule {}
 
 
-export { AuthGuard };
-export { AuthService };
-export { UnauthGuard };
+export { AuthGuard }
+export { AuthService }
+export { UnauthGuard }

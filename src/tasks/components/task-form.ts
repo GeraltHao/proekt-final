@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core'
 
 
 @Component({
@@ -24,19 +24,19 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
 })
 
 export class TaskFormComponent {
-  @Output() createTask = new EventEmitter(false);
+  @Output() createTask = new EventEmitter(false)
 
-  title: string = '';
+  title: string = ''
 
   clear(): void {
-    this.title = '';
+    this.title = ''
   }
 
   submit(): void {
-    const title: string = this.title.trim();
+    const title: string = this.title.trim()
     if (title.length) {
-      this.createTask.emit(title);
+      this.createTask.emit(title)
     }
-    this.clear();
+    this.clear()
   }
 }

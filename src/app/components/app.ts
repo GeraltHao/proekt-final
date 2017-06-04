@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AuthService } from '../../auth';
+import { Component } from '@angular/core'
+import { AuthService } from '../../auth'
 
 
 @Component({
@@ -22,6 +22,6 @@ export class AppComponent {
   constructor(private auth: AuthService) {}
 
   signOut(): void {
-    this.auth.signOut();
+    this.auth.signOut()
   }
 }

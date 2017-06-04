@@ -72,8 +72,8 @@
     "radix": true,
     "restrict-plus-operands": false,
     "semicolon": [
-      false,
-      "always"
+      true,
+      "never"
     ],
     "switch-default": false,
     "trailing-comma": [

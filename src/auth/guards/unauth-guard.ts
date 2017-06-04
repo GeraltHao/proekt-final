@@ -1,10 +1,10 @@
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/take';
+import 'rxjs/add/operator/do'
+import 'rxjs/add/operator/take'
 
-import { Injectable } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import { AuthService } from '../services/auth-service';
+import { Injectable } from '@angular/core'
+import { CanActivate, Router } from '@angular/router'
+import { Observable } from 'rxjs/Observable'
+import { AuthService } from '../services/auth-service'
 
 
 @Injectable()
@@ -16,9 +16,9 @@ export class UnauthGuard implements CanActivate {
       .take(1)
       .do(authenticated => {
         if (authenticated) {
-          this.router.navigate(['/tasks']);
+          this.router.navigate(['/tasks'])
         }
       })
-      .map(authenticated => !authenticated);
+      .map(authenticated => !authenticated)
   }
 }

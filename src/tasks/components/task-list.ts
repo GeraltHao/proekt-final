@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { FirebaseListObservable } from 'angularfire2/database';
-import { ITask } from '../models/task';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core'
+import { FirebaseListObservable } from 'angularfire2/database'
+import { ITask } from '../models/task'
 
 
 @Component({
@@ -27,9 +27,9 @@ import { ITask } from '../models/task';
 })
 
 export class TaskListComponent {
-  @Input() filter: string;
-  @Input() tasks: FirebaseListObservable<ITask[]>;
+  @Input() filter: string
+  @Input() tasks: FirebaseListObservable<ITask[]>
 
-  @Output() remove = new EventEmitter(false);
-  @Output() update = new EventEmitter(false);
+  @Output() remove = new EventEmitter(false)
+  @Output() update = new EventEmitter(false)
 }

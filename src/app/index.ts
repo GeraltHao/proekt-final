@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RouterModule } from '@angular/router'
 
-import { AuthModule } from '../auth';
-import { FirebaseModule } from '../firebase';
-import { TasksModule } from '../tasks';
+import { AuthModule } from '../auth'
+import { FirebaseModule } from '../firebase'
+import { TasksModule } from '../tasks'
 
-import { AppComponent } from './components/app';
-import { AppHeaderComponent } from './components/app-header';
+import { AppComponent } from './components/app'
+import { AppHeaderComponent } from './components/app-header'
 
 
 @NgModule({

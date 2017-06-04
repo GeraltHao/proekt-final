@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core'
 
 
 @Component({
@@ -24,6 +24,6 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 })
 
 export class AppHeaderComponent {
-  @Input() authenticated: boolean;
-  @Output() signOut = new EventEmitter(false);
+  @Input() authenticated: boolean
+  @Output() signOut = new EventEmitter(false)
 }

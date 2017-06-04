@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { AuthService } from '../services/auth-service';
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
+import { AuthService } from '../services/auth-service'
 
 
 @Component({
@@ -26,30 +26,30 @@ export class SignInComponent {
 
   signInAnonymously(): void {
     this.auth.signInAnonymously()
-      .then(() => this.postSignIn());
+      .then(() => this.postSignIn())
   }
 
   signInWithGithub(): void {
     this.auth.signInWithGithub()
-      .then(() => this.postSignIn());
+      .then(() => this.postSignIn())
   }
 
   signInWithGoogle(): void {
     this.auth.signInWithGoogle()
-      .then(() => this.postSignIn());
+      .then(() => this.postSignIn())
   }
 
   signInWithTwitter(): void {
     this.auth.signInWithTwitter()
-      .then(() => this.postSignIn());
+      .then(() => this.postSignIn())
   }
 
   signInWithFacebook(): void {
     this.auth.signInWithFacebook()
-      .then(() => this.postSignIn());
+      .then(() => this.postSignIn())
   }
 
   private postSignIn(): void {
-    this.router.navigate(['/tasks']);
+    this.router.navigate(['/tasks'])
   }
 }
