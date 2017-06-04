@@ -8,7 +8,7 @@ A simple Todo app example built with **Angular 4** and **AngularFire2**. The app
 - AngularFire2 `4.0.0-rc.0`
 - Firebase SDK 3
   - JSON Datastore
-  - OAuth authentication with GitHub, Google, and Twitter
+  - OAuth authentication with Google
   - Hosting
 - RxJS
 - SASS

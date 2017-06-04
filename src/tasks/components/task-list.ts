@@ -11,9 +11,9 @@ import { ITask } from '../models/task'
   ],
   template: `
     <ul class="task-filters">
-      <li><a [class.active]="!filter" [routerLink]="['/tasks']">View All</a></li>
-      <li><a [class.active]="filter === 'false'" [routerLink]="['/tasks', {completed: false}]">Active</a></li>
-      <li><a [class.active]="filter === 'true'" [routerLink]="['/tasks', {completed: true}]">Completed</a></li>
+      <li><a [class.active]="!filter" [routerLink]="['/tasks']">Посмотреть все</a></li>
+      <li><a [class.active]="filter === 'false'" [routerLink]="['/tasks', {completed: false}]">Активные</a></li>
+      <li><a [class.active]="filter === 'true'" [routerLink]="['/tasks', {completed: true}]">Выполненные</a></li>
     </ul>
     
     <div class="task-list">

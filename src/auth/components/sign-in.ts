@@ -10,12 +10,10 @@ import { AuthService } from '../services/auth-service'
   template: `
     <div class="g-row sign-in">
       <div class="g-col">
-        <h1 class="sign-in__heading">Sign in</h1>
-        <button class="sign-in__button" (click)="signInAnonymously()" type="button">Anonymously</button>
-        <button class="sign-in__button" (click)="signInWithGithub()" type="button">GitHub</button>
-        <button class="sign-in__button" (click)="signInWithGoogle()" type="button">Google</button>
-        <button class="sign-in__button" (click)="signInWithTwitter()" type="button">Twitter</button>
-        <button class="sign-in__button" (click)="signInWithFacebook()" type="button">Facebook</button>
+        <h1 class="sign-in__heading">Вход</h1>
+        <button class="sign-in__button" (click)="signInAnonymously()" type="button">Войти анонимно</button>
+        <button class="sign-in__button" (click)="signInWithGoogle()" type="button">Войти через Google</button>
+        <button class="sign-in__button" (click)="signInWithFacebook()" type="button">Войти через Facebook</button>
       </div>
     </div>
   `
@@ -29,18 +27,8 @@ export class SignInComponent {
       .then(() => this.postSignIn())
   }
 
-  signInWithGithub(): void {
-    this.auth.signInWithGithub()
-      .then(() => this.postSignIn())
-  }
-
   signInWithGoogle(): void {
     this.auth.signInWithGoogle()
-      .then(() => this.postSignIn())
-  }
-
-  signInWithTwitter(): void {
-    this.auth.signInWithTwitter()
       .then(() => this.postSignIn())
   }
 

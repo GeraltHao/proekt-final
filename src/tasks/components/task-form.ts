@@ -16,7 +16,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
         autofocus
         class="task-form__input"
         name="title"
-        placeholder="What needs to be done?"
+        placeholder="Что должно быть сделано?"
         required
         type="text">
     </form>

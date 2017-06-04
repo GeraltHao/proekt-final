@@ -14,8 +14,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
           <h1 class="header__title">Нидерман, Волоха, Амелин. ИД, второй проект</h1>
     
           <ul class="header__links">
-            <li *ngIf="authenticated"><a class="header__link" (click)="signOut.emit()" href="#">Sign out</a></li>
-            <li><a class="header__link header__link--github" target="_blank" href="https://github.com/GeraltHao/proekt-final"></a></li>
+            <li *ngIf="authenticated"><a class="header__link" (click)="signOut.emit()" href="#">Выйти</a></li>
           </ul>
         </div>
       </div>

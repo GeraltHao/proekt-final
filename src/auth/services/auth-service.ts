@@ -24,16 +24,8 @@ export class AuthService {
       .catch(error => console.log('ERROR @ AuthService#signInAnonymously() :', error))
   }
 
-  signInWithGithub(): firebase.Promise<any> {
-    return this.signIn(new firebase.auth.GithubAuthProvider())
-  }
-
   signInWithGoogle(): firebase.Promise<any> {
     return this.signIn(new firebase.auth.GoogleAuthProvider())
-  }
-
-  signInWithTwitter(): firebase.Promise<any> {
-    return this.signIn(new firebase.auth.TwitterAuthProvider())
   }
 
   signInWithFacebook(): firebase.Promise<any> {
