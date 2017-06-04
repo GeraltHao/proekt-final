@@ -34,11 +34,11 @@
   }
 
   a {
-    color: #999;
+    color: #000;
     text-decoration: none;
 
     &.active {
-      color: #fff;
+      color: #000;
     }
   }
 }
@@ -49,6 +49,6 @@
 //===================================================================
 
 .task-list {
-  border-top: 1px dotted #666;
+  border-top: 1px dotted #000;
 }
 
