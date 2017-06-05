@@ -8,6 +8,7 @@ import { TasksModule } from '../tasks'
 
 import { AppComponent } from './components/app'
 import { AppHeaderComponent } from './components/app-header'
+import {MaterialModule} from '@angular/material'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AppHeaderComponent } from './components/app-header'
     RouterModule.forRoot([], {useHash: false}),
     AuthModule,
     FirebaseModule,
-    TasksModule
+    TasksModule,
+    MaterialModule
   ]
 })
 
