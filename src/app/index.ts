@@ -8,7 +8,7 @@ import { TasksModule } from '../tasks'
 
 import { AppComponent } from './components/app'
 import { AppHeaderComponent } from './components/app-header'
-import {MaterialModule} from '@angular/material'
+import { MaterialModule } from '@angular/material'
 
 
 @NgModule({
