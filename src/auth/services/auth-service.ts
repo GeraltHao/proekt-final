@@ -19,11 +19,6 @@ export class AuthService {
       .catch(error => console.log('ERROR @ AuthService#signIn() :', error))
   }
 
-  signInAnonymously(): firebase.Promise<any> {
-    return this.afAuth.auth.signInAnonymously()
-      .catch(error => console.log('ERROR @ AuthService#signInAnonymously() :', error))
-  }
-
   signInWithGoogle(): firebase.Promise<any> {
     return this.signIn(new firebase.auth.GoogleAuthProvider())
   }

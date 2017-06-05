@@ -11,9 +11,12 @@ import { AuthService } from '../services/auth-service'
     <div class="g-row sign-in">
       <div class="g-col">
         <h1 class="sign-in__heading">Вход</h1>
-        <button class="sign-in__button" (click)="signInAnonymously()" type="button">Войти анонимно</button>
-        <button class="sign-in__button" (click)="signInWithGoogle()" type="button">Войти через Google</button>
-        <button class="sign-in__button" (click)="signInWithFacebook()" type="button">Войти через Facebook</button>
+        <button class="sign-in__button" (click)="signInWithGoogle()" type="button">
+        <img src="common/google.bmp" width="35" height="35">
+        Войти через Google</button>
+        <button class="sign-in__button" (click)="signInWithFacebook()" type="button">
+        <img src="common/facebook.png" width="35" height="35">
+        Войти через Facebook</button>
       </div>
     </div>
   `
@@ -22,10 +25,6 @@ import { AuthService } from '../services/auth-service'
 export class SignInComponent {
   constructor(private auth: AuthService, private router: Router) {}
 
-  signInAnonymously(): void {
-    this.auth.signInAnonymously()
-      .then(() => this.postSignIn())
-  }
 
   signInWithGoogle(): void {
     this.auth.signInWithGoogle()
