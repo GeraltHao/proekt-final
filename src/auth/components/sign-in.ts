@@ -12,7 +12,7 @@ import { AuthService } from '../services/auth-service'
       <div class="g-col">
         <h1 class="sign-in__heading">Вход</h1>
         <button class="sign-in__button" (click)="signInWithGoogle()" type="button">
-        <img src="common/google.bmp" width="35" height="35">
+        <img src="common/google.png" width="35" height="35">
         Войти через Google</button>
         <button class="sign-in__button" (click)="signInWithFacebook()" type="button">
         <img src="common/facebook.png" width="35" height="35">

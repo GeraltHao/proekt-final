@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
     <header class="header">
       <div class="g-row">
         <div class="g-col">
-          <h1 class="header__title">Нидерман, Волоха, Амелин. ИД, второй проект</h1>
+          <h1 class="header__title">ИД, второй проект</h1>
     
           <ul class="header__links">
             <li *ngIf="authenticated"><a class="header__link" (click)="signOut.emit()" href="#">Выйти</a></li>
