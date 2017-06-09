@@ -1,6 +1,9 @@
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MaterialModule, MdToolbarModule} from '@angular/material'
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule } from '@angular/router'
+
 
 import { AuthModule } from '../auth'
 import { FirebaseModule } from '../firebase'
@@ -8,7 +11,9 @@ import { TasksModule } from '../tasks'
 
 import { AppComponent } from './components/app'
 import { AppHeaderComponent } from './components/app-header'
-import { MaterialModule } from '@angular/material'
+
+
+import 'hammerjs'
 
 
 @NgModule({
@@ -24,9 +29,12 @@ import { MaterialModule } from '@angular/material'
     RouterModule.forRoot([], {useHash: false}),
     AuthModule,
     FirebaseModule,
+    BrowserAnimationsModule,
     TasksModule,
-    MaterialModule
+    MaterialModule,
+    MdToolbarModule
   ]
 })
 
 export class AppModule {}
+export class PizzaPartyAppModule { }
